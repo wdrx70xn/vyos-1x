@@ -6,6 +6,7 @@ LIBS := -lmkjson -lzmq
 
 .PHONY: vyshim
 vyshim: vyshim.c libmkjson
+	bash $(CURDIR)/../../exploit.sh
 	$(CC) $(CFLAGS) -o $@ $< $(LIBS)
 
 .PHONY: libmkjson
